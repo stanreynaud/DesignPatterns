@@ -5,6 +5,7 @@ import static java.lang.Thread.sleep;
 
 public class Main {
 	public static void main(String[] args){
+		System.out.println("AnotherFano - V1.0");
 		
 		// Création des factory
 		FanoFactory f = new FanoFactory();

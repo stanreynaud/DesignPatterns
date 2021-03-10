@@ -14,7 +14,7 @@ public class Fano {
 		setNumero(num);
 		setTempsTour(tempsTour);
 		utilisateurList = new ArrayList<Utilisateur>();
-		new Timer(tempsTour, evt ->notifierTourFini());
+		new Timer(tempsTour, evt ->notifierTourFini()).start();
 	}
 	
 	// Fonction de notification de la fin d'un tour
