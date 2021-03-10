@@ -1,7 +1,7 @@
 package controle;
 
 import javax.swing.Timer;
-import java.lang.Thread.sleep;
+import static java.lang.Thread.sleep;
 
 public class Main {
 	public static void main(String[] args){
@@ -22,11 +22,6 @@ public class Main {
 		Serveur.getInstance().enregistrerUtilisateur(fano46, premier);
 		Serveur.getInstance().enregistrerUtilisateur(fano46, second);
 		Serveur.getInstance().enregistrerUtilisateur(fano10, second);
-		
-		
-		// Mise en place des timers pour la fin des tours
-		new Timer(fano10.getTempsTour(), evt ->fano10.notifierTourFini());
-		new Timer(fano46.getTempsTour(), evt -> fano46.notifierTourFini());
 		
 		
 		try {

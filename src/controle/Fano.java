@@ -2,6 +2,8 @@ package controle;
 
 import java.util.ArrayList;
 
+import javax.swing.Timer;
+
 public class Fano {
 	private int numero;
 	private int tempsTour;
@@ -12,6 +14,7 @@ public class Fano {
 		setNumero(num);
 		setTempsTour(tempsTour);
 		utilisateurList = new ArrayList<Utilisateur>();
+		new Timer(tempsTour, evt ->notifierTourFini());
 	}
 	
 	// Fonction de notification de la fin d'un tour
