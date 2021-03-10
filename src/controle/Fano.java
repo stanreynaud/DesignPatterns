@@ -11,12 +11,14 @@ public class Fano {
 	public Fano(int num, int tempsTour) {
 		setNumero(num);
 		setTempsTour(tempsTour);
-		
 		utilisateurList = new ArrayList<Utilisateur>();
 	}
 	
-	public void tourFini() {
-		
+	// Fonction de notification de la fin d'un tour
+	public void notifierTourFini() {
+		for (Utilisateur u : utilisateurList) {
+			u.recoitNotification(numero,"13h");
+		}
 	}
 
 	public int getNumero() {

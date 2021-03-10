@@ -8,8 +8,9 @@ public class Utilisateur {
 		this.nom = nom;
 	}
 
-	public void recoitNotification() {
-		
+	// Gestion de la notification de fin de tour envoyée par un fano
+	public void recoitNotification(int numero, String date) {
+		System.out.println("Numero: "+numero+" Date: "+date);
 	}
 
 	public String getNom() {
