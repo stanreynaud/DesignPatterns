@@ -10,7 +10,7 @@ public class Utilisateur {
 
 	// Gestion de la notification de fin de tour envoyée par un fano
 	public void recoitNotification(int numero, String date) {
-		System.out.println("Numero: "+numero+" Date: "+date);
+		System.out.println("Utilisateur: "+nom+" Numero: "+numero+" Date: "+date);
 	}
 
 	public String getNom() {
